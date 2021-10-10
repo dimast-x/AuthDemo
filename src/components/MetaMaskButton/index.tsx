@@ -73,7 +73,8 @@ export const MetaMaskButton: React.FunctionComponent = () => {
 
     var GoTrueURL = process.env.REACT_APP_GOTRUE
     if (!GoTrueURL) {
-        GoTrueURL = "http://localhost:8000/auth/v1"
+        //GoTrueURL = "http://localhost:8000/auth/v1"
+        GoTrueURL = "http://curry.openware.network:32783"
     }
 
     const sendChallengeToken = (token: string) => {
